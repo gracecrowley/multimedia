@@ -1,1 +1,41 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Oceans</title>
+		<link rel="stylesheet" href="styles.css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	</head>
+
+        <body>
+
+			<header>
+
+				<h1 >Oceans</h1>
+
+				<p>
+                    Click on an ocean to learn about it
+                </p>
+
+			</header>
+		<main id = 'main'>
+
+			<img src = 'map_of_oceans.png' title ='map' alt = 'map' width=" 1000px" class = 'image' usemap="#clickmap" />
+
+
+
+			<map name="clickmap">
+			  <area shape="rect" coords="200,20,250,100" href="nasaimage.jpg" alt="Sun">
+			  <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+			  <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+			</map>
+
+		</main>
+			<script>$(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+});</script>
+        </body>
+</html>
